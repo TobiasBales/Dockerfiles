@@ -18,3 +18,5 @@ RUN hg pull -u || hg clone https://vim.googlecode.com/hg/ /opt/vim
 RUN /opt/vim/configure --prefix=/usr/local/stow/vim --enable-gui=no --without-x --disable-nls --enable-multibyte --with-tlib=ncurses --enable-pythoninterp --enable-rubyinterp --with-features=huge
 RUN make
 RUN make install
+
+CMD /bin/bash
