@@ -17,5 +17,6 @@ Use the software without having to install all build deps
 
 Currently available are
 
+* [tarsnap](tarsnap/Dockerfile)
 * [tmux](tmux/Dockerfile)
 * [vim](vim/Dockerfile)
