@@ -17,6 +17,7 @@ Use the software without having to install all build deps
 
 Currently available are
 
+* [emacs](emacs/Dockerfile)
 * [tarsnap](tarsnap/Dockerfile)
 * [tmux](tmux/Dockerfile)
 * [vim](vim/Dockerfile)
