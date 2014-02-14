@@ -1,8 +1,10 @@
-FROM ubuntu
+FROM ubuntu:13.10
 MAINTAINER Tobias Raeder tobias.raeder@gmail.com
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update
-RUN apt-get upgrade
+RUN apt-get upgrade -y
 
 RUN apt-get install -y build-essential
 RUN apt-get install -y libssl-dev
