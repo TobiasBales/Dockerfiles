@@ -1,8 +1,9 @@
-FROM ubuntu
+FROM ubuntu:13.10
 MAINTAINER Tobias Raeder tobias.raeder@gmail.com
 
-RUN echo "deb-src http://archive.ubuntu.com/ubuntu/ precise main\n\n" >> /etc/apt/sources.list
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ precise universe\n" >> /etc/apt/sources.list
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN echo "deb-src http://archive.ubuntu.com/ubuntu/ saucy main\n\n" >> /etc/apt/sources.list
 
 RUN apt-get update
 RUN apt-get -y upgrade
